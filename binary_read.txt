@@ -1,0 +1,64 @@
+/dev/input/js0
+
+ALL
+8 bytes per input (press and release are separate events)
+first 4 are time stamp?
+
+struct format i/I hH
+
+
+BUTTONS
+2nd to last 2 indicate release or press
+last 2 bytes indicate key id
+
+press = \x01\x00
+release = \x00\x00
+
+start = \x01\t
+a = \x01\x02
+b = \x01\x01
+x = \x01\x03
+y = \x01\x00
+z = \x01\x07
+l = \x01\x04
+r = \x01\x05
+
+
+DPAD
+2nd to last 2 indicate press/release and direction
+press up/left = \x01\x80
+press down/right = \xff\x7f
+release = \x00\x00
+
+last 2 indicate up/down or left/right but not which one
+up/down = \x02\x05
+left/right = \x02\x04
+
+
+CSTICK
+up and down dont work?
+press/release same as buttons
+last 2 bytes same as buttons
+
+cup = 
+cdwn = 
+clft = \x01\x06
+crght = \x01\x08
+
+
+JOYSTICK
+same as dpad
+2nd to last 2 indicate press/release and direction
+press up/left = \x01\x80
+press down/right = \xff\x7f
+release = \x00\x00
+
+last 2 indicate up/down or left/right but not which one
+up/down = \x02\x05
+left/right = \x02\x04
+
+
+ISSUES
+no cstick up/down
+joystick and dpad have identical outputs
+dpad spams press/release. hardware issues?

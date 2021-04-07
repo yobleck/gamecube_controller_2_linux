@@ -1,0 +1,280 @@
+/dev/input/js0-3 with the adapter set to pc mode not wii/gc mode
+
+/dev/hidraw# #=4
+/dev/bus/bus number/device number
+
+
+/sys/kernel/debug/usb/devices
+T:  Bus=01 Lev=01 Prnt=01 Port=04 Cnt=01 Dev#=  2 Spd=12   MxCh= 0
+D:  Ver= 2.00 Cls=00(>ifc ) Sub=00 Prot=00 MxPS=64 #Cfgs=  1
+P:  Vendor=057e ProdID=0337 Rev= 1.00
+S:  Manufacturer=Nintendo
+S:  Product=WUP-028
+S:  SerialNumber=15/07/2014
+C:* #Ifs= 1 Cfg#= 1 Atr=e0 MxPwr=500mA
+I:* If#= 0 Alt= 0 #EPs= 2 Cls=03(HID  ) Sub=00 Prot=00 Driver=(none)
+E:  Ad=81(I) Atr=03(Int.) MxPS=  37 Ivl=8ms
+E:  Ad=02(O) Atr=03(Int.) MxPS=   5 Ivl=8ms
+
+
+lsusb -v -s bus number:device number
+Bus 001 Device 002: ID 057e:0337 Nintendo Co., Ltd Wii U GameCube Controller Adapter
+Device Descriptor:
+  bLength                18
+  bDescriptorType         1
+  bcdUSB               2.00
+  bDeviceClass            0 
+  bDeviceSubClass         0 
+  bDeviceProtocol         0 
+  bMaxPacketSize0        64
+  idVendor           0x057e Nintendo Co., Ltd
+  idProduct          0x0337 Wii U GameCube Controller Adapter
+  bcdDevice            1.00
+  iManufacturer           1 Nintendo
+  iProduct                2 WUP-028
+  iSerial                 3 15/07/2014
+  bNumConfigurations      1
+  Configuration Descriptor:
+    bLength                 9
+    bDescriptorType         2
+    wTotalLength       0x0029
+    bNumInterfaces          1
+    bConfigurationValue     1
+    iConfiguration          0 
+    bmAttributes         0xe0
+      Self Powered
+      Remote Wakeup
+    MaxPower              500mA
+    Interface Descriptor:
+      bLength                 9
+      bDescriptorType         4
+      bInterfaceNumber        0
+      bAlternateSetting       0
+      bNumEndpoints           2
+      bInterfaceClass         3 Human Interface Device
+      bInterfaceSubClass      0 
+      bInterfaceProtocol      0 
+      iInterface              0 
+        HID Device Descriptor:
+          bLength                 9
+          bDescriptorType        33
+          bcdHID               1.10
+          bCountryCode            0 Not supported
+          bNumDescriptors         1
+          bDescriptorType        34 Report
+          wDescriptorLength     214
+          Report Descriptor: (length is 214)
+            Item(Global): Usage Page, data= [ 0x05 ] 5
+                            Game Controls
+            Item(Local ): Usage, data= [ 0x00 ] 0
+                            Undefined
+            Item(Main  ): Collection, data= [ 0x01 ] 1
+                            Application
+            Item(Global): Report ID, data= [ 0x11 ] 17
+            Item(Local ): Usage Minimum, data= [ 0x00 ] 0
+                            Undefined
+            Item(Local ): Usage Maximum, data= [ 0xff 0x00 ] 255
+                            (null)
+            Item(Global): Logical Minimum, data= [ 0x00 ] 0
+            Item(Global): Logical Maximum, data= [ 0xff 0x00 ] 255
+            Item(Global): Report Size, data= [ 0x08 ] 8
+            Item(Global): Report Count, data= [ 0x05 ] 5
+            Item(Main  ): Output, data= [ 0x00 ] 0
+                            Data Array Absolute No_Wrap Linear
+                            Preferred_State No_Null_Position Non_Volatile Bitfield
+            Item(Main  ): End Collection, data=none
+            Item(Main  ): Collection, data= [ 0x01 ] 1
+                            Application
+            Item(Global): Report ID, data= [ 0x21 ] 33
+            Item(Local ): Usage Minimum, data= [ 0x00 ] 0
+                            Undefined
+            Item(Local ): Usage Maximum, data= [ 0xff 0x00 ] 255
+                            (null)
+            Item(Global): Logical Minimum, data= [ 0x00 ] 0
+            Item(Global): Logical Maximum, data= [ 0xff 0x00 ] 255
+            Item(Global): Report Size, data= [ 0x08 ] 8
+            Item(Global): Report Count, data= [ 0x25 ] 37
+            Item(Main  ): Input, data= [ 0x00 ] 0
+                            Data Array Absolute No_Wrap Linear
+                            Preferred_State No_Null_Position Non_Volatile Bitfield
+            Item(Main  ): End Collection, data=none
+            Item(Main  ): Collection, data= [ 0x01 ] 1
+                            Application
+            Item(Global): Report ID, data= [ 0x12 ] 18
+            Item(Local ): Usage Minimum, data= [ 0x00 ] 0
+                            Undefined
+            Item(Local ): Usage Maximum, data= [ 0xff 0x00 ] 255
+                            (null)
+            Item(Global): Logical Minimum, data= [ 0x00 ] 0
+            Item(Global): Logical Maximum, data= [ 0xff 0x00 ] 255
+            Item(Global): Report Size, data= [ 0x08 ] 8
+            Item(Global): Report Count, data= [ 0x01 ] 1
+            Item(Main  ): Output, data= [ 0x00 ] 0
+                            Data Array Absolute No_Wrap Linear
+                            Preferred_State No_Null_Position Non_Volatile Bitfield
+            Item(Main  ): End Collection, data=none
+            Item(Main  ): Collection, data= [ 0x01 ] 1
+                            Application
+            Item(Global): Report ID, data= [ 0x22 ] 34
+            Item(Local ): Usage Minimum, data= [ 0x00 ] 0
+                            Undefined
+            Item(Local ): Usage Maximum, data= [ 0xff 0x00 ] 255
+                            (null)
+            Item(Global): Logical Minimum, data= [ 0x00 ] 0
+            Item(Global): Logical Maximum, data= [ 0xff 0x00 ] 255
+            Item(Global): Report Size, data= [ 0x08 ] 8
+            Item(Global): Report Count, data= [ 0x19 ] 25
+            Item(Main  ): Input, data= [ 0x00 ] 0
+                            Data Array Absolute No_Wrap Linear
+                            Preferred_State No_Null_Position Non_Volatile Bitfield
+            Item(Main  ): End Collection, data=none
+            Item(Main  ): Collection, data= [ 0x01 ] 1
+                            Application
+            Item(Global): Report ID, data= [ 0x13 ] 19
+            Item(Local ): Usage Minimum, data= [ 0x00 ] 0
+                            Undefined
+            Item(Local ): Usage Maximum, data= [ 0xff 0x00 ] 255
+                            (null)
+            Item(Global): Logical Minimum, data= [ 0x00 ] 0
+            Item(Global): Logical Maximum, data= [ 0xff 0x00 ] 255
+            Item(Global): Report Size, data= [ 0x08 ] 8
+            Item(Global): Report Count, data= [ 0x01 ] 1
+            Item(Main  ): Output, data= [ 0x00 ] 0
+                            Data Array Absolute No_Wrap Linear
+                            Preferred_State No_Null_Position Non_Volatile Bitfield
+            Item(Main  ): End Collection, data=none
+            Item(Main  ): Collection, data= [ 0x01 ] 1
+                            Application
+            Item(Global): Report ID, data= [ 0x23 ] 35
+            Item(Local ): Usage Minimum, data= [ 0x00 ] 0
+                            Undefined
+            Item(Local ): Usage Maximum, data= [ 0xff 0x00 ] 255
+                            (null)
+            Item(Global): Logical Minimum, data= [ 0x00 ] 0
+            Item(Global): Logical Maximum, data= [ 0xff 0x00 ] 255
+            Item(Global): Report Size, data= [ 0x08 ] 8
+            Item(Global): Report Count, data= [ 0x02 ] 2
+            Item(Main  ): Input, data= [ 0x00 ] 0
+                            Data Array Absolute No_Wrap Linear
+                            Preferred_State No_Null_Position Non_Volatile Bitfield
+            Item(Main  ): End Collection, data=none
+can't get device qualifier: Resource temporarily unavailable
+            Item(Main  ): Collection, data= [ 0x01 ] 1
+                            Application
+            Item(Global): Report ID, data= [ 0x14 ] 20
+            Item(Local ): Usage Minimum, data= [ 0x00 ] 0
+                            Undefined
+            Item(Local ): Usage Maximum, data= [ 0xff 0x00 ] 255
+                            (null)
+            Item(Global): Logical Minimum, data= [ 0x00 ] 0
+            Item(Global): Logical Maximum, data= [ 0xff 0x00 ] 255
+            Item(Global): Report Size, data= [ 0x08 ] 8
+            Item(Global): Report Count, data= [ 0x01 ] 1
+            Item(Main  ): Output, data= [ 0x00 ] 0
+                            Data Array Absolute No_Wrap Linear
+                            Preferred_State No_Null_Position Non_Volatile Bitfield
+            Item(Main  ): End Collection, data=none
+            Item(Main  ): Collection, data= [ 0x01 ] 1
+                            Application
+            Item(Global): Report ID, data= [ 0x24 ] 36
+            Item(Local ): Usage Minimum, data= [ 0x00 ] 0
+                            Undefined
+            Item(Local ): Usage Maximum, data= [ 0xff 0x00 ] 255
+                            (null)
+            Item(Global): Logical Minimum, data= [ 0x00 ] 0
+            Item(Global): Logical Maximum, data= [ 0xff 0x00 ] 255
+            Item(Global): Report Size, data= [ 0x08 ] 8
+            Item(Global): Report Count, data= [ 0x02 ] 2
+            Item(Main  ): Input, data= [ 0x00 ] 0
+                            Data Array Absolute No_Wrap Linear
+                            Preferred_State No_Null_Position Non_Volatile Bitfield
+            Item(Main  ): End Collection, data=none
+            Item(Main  ): Collection, data= [ 0x01 ] 1
+                            Application
+            Item(Global): Report ID, data= [ 0x15 ] 21
+            Item(Local ): Usage Minimum, data= [ 0x00 ] 0
+                            Undefined
+            Item(Local ): Usage Maximum, data= [ 0xff 0x00 ] 255
+                            (null)
+            Item(Global): Logical Minimum, data= [ 0x00 ] 0
+            Item(Global): Logical Maximum, data= [ 0xff 0x00 ] 255
+            Item(Global): Report Size, data= [ 0x08 ] 8
+            Item(Global): Report Count, data= [ 0x01 ] 1
+            Item(Main  ): Output, data= [ 0x00 ] 0
+                            Data Array Absolute No_Wrap Linear
+                            Preferred_State No_Null_Position Non_Volatile Bitfield
+            Item(Main  ): End Collection, data=none
+            Item(Main  ): Collection, data= [ 0x01 ] 1
+                            Application
+            Item(Global): Report ID, data= [ 0x25 ] 37
+            Item(Local ): Usage Minimum, data= [ 0x00 ] 0
+                            Undefined
+            Item(Local ): Usage Maximum, data= [ 0xff 0x00 ] 255
+                            (null)
+            Item(Global): Logical Minimum, data= [ 0x00 ] 0
+            Item(Global): Logical Maximum, data= [ 0xff 0x00 ] 255
+            Item(Global): Report Size, data= [ 0x08 ] 8
+            Item(Global): Report Count, data= [ 0x02 ] 2
+            Item(Main  ): Input, data= [ 0x00 ] 0
+                            Data Array Absolute No_Wrap Linear
+                            Preferred_State No_Null_Position Non_Volatile Bitfield
+            Item(Main  ): End Collection, data=none
+      Endpoint Descriptor:
+        bLength                 7
+        bDescriptorType         5
+        bEndpointAddress     0x81  EP 1 IN
+        bmAttributes            3
+          Transfer Type            Interrupt
+          Synch Type               None
+          Usage Type               Data
+        wMaxPacketSize     0x0025  1x 37 bytes
+        bInterval               8
+      Endpoint Descriptor:
+        bLength                 7
+        bDescriptorType         5
+        bEndpointAddress     0x02  EP 2 OUT
+        bmAttributes            3
+          Transfer Type            Interrupt
+          Synch Type               None
+          Usage Type               Data
+        wMaxPacketSize     0x0005  1x 5 bytes
+        bInterval               8
+can't get debug descriptor: Resource temporarily unavailable
+Device Status:     0x0002
+  (Bus Powered)
+  Remote Wakeup Enabled
+
+
+udevadm monitor; then unplug anf replug black usb for adapter
+also see: udevadm info /sys/bus/usb/devices/usb1/1-5/1-5:1.0/0003:057E:0337.0011/
+
+KERNEL[30905.294136] remove   /devices/pci0000:00/0000:00:01.2/0000:20:00.0/0000:21:08.0/0000:2a:00.1/usb1/1-5/1-5:1.0 (usb)
+UDEV  [30905.295885] remove   /devices/pci0000:00/0000:00:01.2/0000:20:00.0/0000:21:08.0/0000:2a:00.1/usb1/1-5/1-5:1.0 (usb)
+KERNEL[30905.301704] unbind   /devices/pci0000:00/0000:00:01.2/0000:20:00.0/0000:21:08.0/0000:2a:00.1/usb1/1-5 (usb)
+KERNEL[30905.301737] remove   /devices/pci0000:00/0000:00:01.2/0000:20:00.0/0000:21:08.0/0000:2a:00.1/usb1/1-5 (usb)
+UDEV  [30905.302817] unbind   /devices/pci0000:00/0000:00:01.2/0000:20:00.0/0000:21:08.0/0000:2a:00.1/usb1/1-5 (usb)
+UDEV  [30905.303393] remove   /devices/pci0000:00/0000:00:01.2/0000:20:00.0/0000:21:08.0/0000:2a:00.1/usb1/1-5 (usb)
+KERNEL[30908.655757] add      /devices/pci0000:00/0000:00:01.2/0000:20:00.0/0000:21:08.0/0000:2a:00.1/usb1/1-5 (usb)
+KERNEL[30908.678689] change   /devices/pci0000:00/0000:00:01.2/0000:20:00.0/0000:21:08.0/0000:2a:00.1/usb1/1-5 (usb)
+KERNEL[30908.678724] add      /devices/pci0000:00/0000:00:01.2/0000:20:00.0/0000:21:08.0/0000:2a:00.1/usb1/1-5/1-5:1.0 (usb)
+KERNEL[30908.686787] add      /devices/pci0000:00/0000:00:01.2/0000:20:00.0/0000:21:08.0/0000:2a:00.1/usb1/1-5/1-5:1.0/0003:057E:0337.0011 (hid)
+KERNEL[30908.686927] add      /devices/pci0000:00/0000:00:01.2/0000:20:00.0/0000:21:08.0/0000:2a:00.1/usb1/1-5/1-5:1.0/usbmisc/hiddev2 (usbmisc)
+KERNEL[30908.686958] add      /devices/pci0000:00/0000:00:01.2/0000:20:00.0/0000:21:08.0/0000:2a:00.1/usb1/1-5/1-5:1.0/0003:057E:0337.0011/hidraw/hidraw4 (hidraw)
+KERNEL[30908.686977] bind     /devices/pci0000:00/0000:00:01.2/0000:20:00.0/0000:21:08.0/0000:2a:00.1/usb1/1-5/1-5:1.0/0003:057E:0337.0011 (hid)
+KERNEL[30908.686997] bind     /devices/pci0000:00/0000:00:01.2/0000:20:00.0/0000:21:08.0/0000:2a:00.1/usb1/1-5/1-5:1.0 (usb)
+KERNEL[30908.687018] bind     /devices/pci0000:00/0000:00:01.2/0000:20:00.0/0000:21:08.0/0000:2a:00.1/usb1/1-5 (usb)
+UDEV  [30909.222735] add      /devices/pci0000:00/0000:00:01.2/0000:20:00.0/0000:21:08.0/0000:2a:00.1/usb1/1-5 (usb)
+UDEV  [30909.224479] change   /devices/pci0000:00/0000:00:01.2/0000:20:00.0/0000:21:08.0/0000:2a:00.1/usb1/1-5 (usb)
+UDEV  [30909.225701] add      /devices/pci0000:00/0000:00:01.2/0000:20:00.0/0000:21:08.0/0000:2a:00.1/usb1/1-5/1-5:1.0 (usb)
+UDEV  [30909.226759] add      /devices/pci0000:00/0000:00:01.2/0000:20:00.0/0000:21:08.0/0000:2a:00.1/usb1/1-5/1-5:1.0/0003:057E:0337.0011 (hid)
+UDEV  [30909.227745] add      /devices/pci0000:00/0000:00:01.2/0000:20:00.0/0000:21:08.0/0000:2a:00.1/usb1/1-5/1-5:1.0/usbmisc/hiddev2 (usbmisc)
+UDEV  [30909.231708] add      /devices/pci0000:00/0000:00:01.2/0000:20:00.0/0000:21:08.0/0000:2a:00.1/usb1/1-5/1-5:1.0/0003:057E:0337.0011/hidraw/hidraw4 (hidraw)
+UDEV  [30909.232584] bind     /devices/pci0000:00/0000:00:01.2/0000:20:00.0/0000:21:08.0/0000:2a:00.1/usb1/1-5/1-5:1.0/0003:057E:0337.0011 (hid)
+UDEV  [30909.234538] bind     /devices/pci0000:00/0000:00:01.2/0000:20:00.0/0000:21:08.0/0000:2a:00.1/usb1/1-5/1-5:1.0 (usb)
+UDEV  [30909.238503] bind     /devices/pci0000:00/0000:00:01.2/0000:20:00.0/0000:21:08.0/0000:2a:00.1/usb1/1-5 (usb)
+
+
+
+
+pcie filepaths
+/sys/bus/usb/devices/usb1/1-5/
